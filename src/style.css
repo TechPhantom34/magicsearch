@@ -1,0 +1,27 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f8fafc;
+  --subtext: #94a3b8;
+  --accent: #38bdf8;
+  --border: #334155;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background-color: var(--bg); color: var(--text); }
+
+.container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+.header { text-align: center; margin-bottom: 2rem; }
+.logo { font-size: 2.5rem; font-weight: bold; color: var(--accent); text-decoration: none; }
+
+.search-form { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.search-input { flex: 1; padding: 0.8rem 1.2rem; border-radius: 99px; border: 1px solid var(--border); background: var(--card); color: var(--text); outline: none; }
+.search-btn { padding: 0.8rem 1.5rem; border-radius: 99px; border: none; background: var(--accent); font-weight: bold; cursor: pointer; }
+
+.status { margin: 1.5rem 0; color: var(--subtext); text-align: center; }
+.results { display: flex; flex-direction: column; gap: 1rem; }
+
+.card { background: var(--card); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--border); }
+.card-url { font-size: 0.8rem; color: var(--subtext); }
+.card-title a { color: var(--accent); text-decoration: none; font-size: 1.2rem; }
+.card-snippet { margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.4; color: var(--subtext); }
